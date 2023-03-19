@@ -1,4 +1,4 @@
-Roadmap
+Feature roadmap
 
 - [x] Virtualization
 - [x] Scroll to item when row click
@@ -6,3 +6,4 @@ Roadmap
 - [ ] Event markers
 - [ ] Dependency arrows
 - [ ] Lazy loading
+- [ ] Table
