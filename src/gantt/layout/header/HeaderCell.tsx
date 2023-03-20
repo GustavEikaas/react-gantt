@@ -1,4 +1,5 @@
 import { subDays } from "date-fns";
+import { tokens } from "../../tokens/tokens";
 import { HeaderItem } from "../../types";
 
 type HeaderCellProps = {
@@ -20,7 +21,7 @@ export function HeaderCell({ item, size, start, offset }: HeaderCellProps) {
         width: `${size}px`,
         height: "25px",
         transform: `translateX(${start}px)`,
-        borderRight: "1px solid black",
+        borderRight: `1px solid ${tokens.border_primary}`,
         boxSizing: "border-box",
       }}
     >

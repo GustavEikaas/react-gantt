@@ -1,5 +1,6 @@
 import { VirtualItem } from "@tanstack/react-virtual";
 import { PropsWithChildren } from "react";
+import { tokens } from "../../tokens/tokens";
 
 type RowWrapperProps = {
   virtualItem: VirtualItem;
@@ -25,7 +26,7 @@ export const RowWrapper = ({
         height: `${virtualItem.size}px`,
         width: "100%",
         boxSizing: "border-box",
-        borderBottom: "1px solid grey",
+        borderBottom: `1px solid ${tokens.border_primary}`,
         transform: `translateY(${virtualItem.start + headerHeight}px)`,
       }}
     >

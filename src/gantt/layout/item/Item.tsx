@@ -1,4 +1,5 @@
 import { addDays } from "date-fns";
+import { tokens } from "../../tokens/tokens";
 import { GanttData } from "../../types";
 
 type ItemProps = {
@@ -13,7 +14,7 @@ export const GanttTask = ({ item, height }: ItemProps) => {
         item.duration
       ).toDateString()}`}
       style={{
-        background: " #7AC0F8",
+        background: tokens.interactive_primary,
         boxShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)",
         borderRadius: "20px",
         height: `${height}px`,

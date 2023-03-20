@@ -1,5 +1,6 @@
 import { useVirtualizer } from "@tanstack/react-virtual";
 import styled from "styled-components";
+import { tokens } from "../../tokens/tokens";
 import { TimelineDimension } from "../../types";
 import { generateHeaders } from "../../utils/generateHeaders";
 import { HeaderCell } from "./HeaderCell";
@@ -79,6 +80,6 @@ const StickyHeader = styled.div<{ width: number }>`
   z-index: 2;
   width: ${({ width }) => `${width}px`};
   height: 50px;
-  background: lightgray;
+  background: ${tokens.background_default};
   color: black;
 `;
