@@ -18,3 +18,11 @@ export type HeaderItem = {
   endDate: Date;
   width: number;
 };
+
+/**
+ * Marks a milestone/flag on the gantt canvas
+ */
+export type EventMarker = {
+  date: Date;
+  label: string;
+};
